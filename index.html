@@ -14,7 +14,7 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-        <header>
+        <header class="main-header">
             <div class="header-top-wrap">
                 <nav class="header-top-navigation">
                     <div class="header-logo-wrap">
@@ -111,40 +111,60 @@
             <main class="main-content">
                 <section class="main-user-menu">
                     <h3 class="visually-hidden">Меню товаров и услуг</h3>
-                    <ul class="user-menu-list">
-                        <li>Материалы<a href="#">На любой вкус</a>
-                        </li>
-                        <li>Инструмент<a href="#">На все случаи</a>
-                        </li>
-                        <li>Техника<a href="#">Для стройки</a>
-                        </li>
-                        <li>Скидки 50%<a href="#">На 350 товаров</a>
-                        </li>
-                        <li>Доставка<a href="#">Бесплатно</a>
-                        </li>
-                    </ul>
+                    <!--<section class="user-menu-list">-->
+                    <section class="menu-list-item materials">
+                        <div class="list-item-wrap">
+                            <p>Материалы</p>
+                            <a class="btn list-item-btn" href="#">На любой вкус</a>
+                        </div>
+                    </section>
+                    <section class="menu-list-item tool">
+                        <div class="list-item-wrap">
+                            <p>Инструмент</p>
+                            <a class="btn list-item-btn" href="#">На все случаи</a>
+                        </div>
+                    </section>
+                    <section class="menu-list-item technic">
+                        <div class="list-item-wrap">
+                            <p>Техника</p>
+                            <a class="btn list-item-btn" href="#">Для стройки</a>
+                        </div>
+                    </section>
+                    <article class="promo-slider">
+                        <h3 class="visually-hidden">Слайдер товаров</h3>
+                        <input class="input-slider-item" id="slider1" type="radio" checked="checked">
+                        <input class="input-slider-item" id="slider2" type="radio">
+                        <div class="promo-slider-item slider1">
+                            <h2>Дрели</h2>
+                            <p>Соседям на радость!</p>
+                            <img src="img/slide1.jpg" width="620" height="266" alt="Промо дрели">
+                            <a class="btn" href="#">Открыть каталог</a>
+                        </div>
+                        <!--<div class="promo-slider-item slider2"> <h2>Перфораторы</h2> <p>Настоящие
+                        мужские игрушки</p> <a class="btn" href="#">Открыть каталог</a> </div>-->
+                        <button class="slider-control-left">Влево</button>
+                        <button class="slider-control-right">Вправо</button>
+                        <div class="slider-radio-wrap">
+                            <label class="radio-btn1" for="slider1"></label>
+                            <label class="radio-btn2 checked" for="slider2"></label>
+                        </div>
+                    </article>
+                    <div class="user-menu-column">
+                        <section class="menu-list-item sale">
+                            <div class="list-item-wrap">
+                                <p>Скидки 50%</p>
+                                <a class="btn list-item-btn" href="#">На 350 товаров</a>
+                            </div>
+                        </section>
+                        <section class="menu-list-item delivery-free">
+                            <div class="list-item-wrap">
+                                <p>Доставка</p>
+                                <a class="btn list-item-btn" href="#">Бесплатно</a>
+                            </div>
+                        </section>
+                    </div>
+                    <!--</section>-->
                 </section>
-                <article class="promo-slider">
-                    <h3 class="visually-hidden">Слайдер товаров</h3>
-                    <input class="input-slider-item" id="slider1" type="radio" checked="checked">
-                    <input class="input-slider-item" id="slider2" type="radio">
-                    <div class="slider-radio-wrap">
-                        <label for="slider1"></label>
-                        <label for="slider2"></label>
-                    </div>
-                    <div class="promo-slider-item slider1">
-                        <h2>Дрели</h2>
-                        <p>Соседям на радость!</p>
-                        <a class="btn" href="#">Открыть каталог</a>
-                    </div>
-                    <div class="promo-slider-item slider2">
-                        <h2>Перфораторы</h2>
-                        <p>Настоящие мужские игрушки</p>
-                        <a class="btn" href="#">Открыть каталог</a>
-                    </div>
-                    <button class="slider-control-left">Влево</button>
-                    <button class="slider-control-right">Вправо</button>
-                </article>
                 <section class="popular-product">
                     <div class="popular-head-wrap">
                         <h3>Популярные товары:</h3>
