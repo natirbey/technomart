@@ -72,7 +72,7 @@ body {
     font-size: 17px;
     line-height: 17px;
     font-weight: 400;
-    color: turquoise;
+    color: #000000;
     text-transform: uppercase;
     background-color: #ffffff;
     min-width: 940px;
@@ -356,6 +356,8 @@ body {
 }
 
 .menu-list-item .list-item-btn {
+    display: block;
+    text-decoration: none;
     padding: 0;
     margin: 0;
     width: 138px;
@@ -371,6 +373,7 @@ body {
 .main-user-menu {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 53px;
 }
 
 .main-user-menu .materials {
@@ -419,11 +422,19 @@ body {
     flex-wrap: wrap;
 }
 
-.main-user-menu a {
-    display: block;
+.btn-red {
+    display: inline-block;
     text-decoration: none;
     margin: 0;
     padding: 0;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #ee3643;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 45px 10px 49px;
+    position: relative;
+    z-index: 10;
 }
 
 .main-user-menu>.menu-list-item {
@@ -451,12 +462,6 @@ body {
 
 .promo-slider input {
     display: none;
-}
-
-.promo-slider-item a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
 }
 
 .promo-slider-item img {
@@ -487,18 +492,6 @@ body {
 .promo-slider .slider-control-right {
     background-image: url("../img/icon-right.svg");
     right: 20px;
-}
-
-.promo-slider-item .btn {
-    display: inline-block;
-    border-radius: 3px;
-    color: #ffffff;
-    background-color: #ee3643;
-    font-size: 14px;
-    line-height: 18px;
-    padding: 14px 45px 14px 49px;
-    position: relative;
-    z-index: 10;
 }
 
 .promo-slider {
@@ -544,7 +537,7 @@ body {
     line-height: 36px;
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .promo-slider-item p {
@@ -562,24 +555,130 @@ body {
 .popular-head-wrap {
     display: flex;
     flex-wrap: wrap;
+    background-color: #f9f5f0;
+    padding: 25px 24px 26px 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .popular-head-wrap h3 {
+    display: block;
     margin: 0;
     padding: 0;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #32425c;
+}
+
+.popular-manufacturer .btn-red {
+    padding: 11px 70px 11px 70px;
+}
+
+.popular-product {
+    margin-bottom: 22px;
 }
 
 .popular-product-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popular-manufacturer-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 85px;
 }
 
 .popular-manufacturer-item {
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    align-items: center;
+    width: 220px;
+    height: 145px;
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+}
+
+.popular-manufacturer-item img {
+    margin: 0 auto;
+}
+
+.popular-manufacturer-item:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.popular-product .popular-product-item {
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 1px solid #eaeaea;
+    width: 220px;
+    text-align: center;
+}
+
+.popular-product-item p:first-of-type {
+    order: -1;
+    display: inline-block;
+}
+
+.popular-product-item p {
     margin: 0;
     padding: 0;
+}
+
+.popular-product-item h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 18px;
+}
+
+.popular-product-item .name-product {
+    text-transform: lowercase;
+}
+
+.popular-product-item h3::first-letter {
+    text-transform: uppercase;
+}
+
+.popular-product-item .popular-img-wrap {
+    margin-bottom: 44px;
+    padding-top: 40px;
+}
+
+.product-item-price {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    line-height: 18px;
+}
+
+.product-item-price .old-price {
+    color: #a9a9a9;
+    margin-bottom: 13px;
+    text-decoration: line-through;
+}
+
+.product-item-price a {
+    margin: 0 auto;
+    margin-bottom: 21px;
+    color: #ffffff;
+    width: 141px;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    background-image: url("../img/btn-red-price.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 141px 38px;
 }
 
 .services-list-wrap {
@@ -591,6 +690,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.services h3,
+.services p {
+    margin: 0;
+    padding: 0;
 }
 
 .delivery {
