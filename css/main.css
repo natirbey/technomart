@@ -277,7 +277,7 @@ body {
     color: #000000;
     font-size: 21px;
     line-height: 21px;
-    padding: 15px 25px 15px 25px;
+    padding: 15px 25px;
 }
 
 .user-navigation-bottom li:first-child .btn {
@@ -330,8 +330,7 @@ body {
     padding-right: 55px;
 }
 
-.container-center,
-.main-content {
+.container-center {
     width: 940px;
     margin: 0 auto;
 }
@@ -364,7 +363,7 @@ body {
     text-align: center;
     font-size: 14px;
     line-height: 18px;
-    padding: 10px 24px 10px 24px;
+    padding: 10px 24px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
@@ -437,7 +436,7 @@ body {
     z-index: 10;
 }
 
-.main-user-menu>.menu-list-item {
+.main-user-menu > .menu-list-item {
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -573,7 +572,7 @@ body {
 }
 
 .popular-manufacturer .btn-red {
-    padding: 11px 70px 11px 70px;
+    padding: 11px 70px;
 }
 
 .popular-product {
@@ -669,16 +668,25 @@ body {
 }
 
 .product-item-price a {
-    margin: 0 auto;
-    margin-bottom: 21px;
+    margin: 0 auto 21px;
     color: #ffffff;
     width: 141px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0;
     text-decoration: none;
     background-image: url("../img/btn-red-price.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 141px 38px;
+}
+
+.services-wrap {
+    background-color: #f4f8f9;
+}
+
+.services {
+    width: 940px;
+    margin: 0 auto;
+    padding: 68px 0px 102px 0px;
 }
 
 .services-list-wrap {
@@ -692,10 +700,50 @@ body {
     list-style: none;
 }
 
+.services-list-item .btn-services {
+    display: inline-block;
+    text-transform: lowercase;
+    width: 240px;
+    padding: 15px 20px 15px 20px;
+    background-color: #32425c;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 1px solid  
+}
+
+.services-list-item .btn-services::first-letter {
+    text-transform: uppercase;
+}
+
+.services-list-item .checked {
+    background-color: #ffffff;
+    color: #32425c;
+}
+
 .services h3,
 .services p {
     margin: 0;
     padding: 0;
+}
+
+.services h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 33px;
+}
+
+.services p {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: lowercase;
+}
+
+.services p::first-letter {
+    text-transform: uppercase;
 }
 
 .delivery {
